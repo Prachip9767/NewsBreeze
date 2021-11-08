@@ -1,29 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+<layout>
+    <data>
 
-    <ImageView
-        android:id="@+id/ivNews"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:scaleType="centerCrop" />
+        <variable
+            name="article"
+            type="com.example.myapplication.remote.response.Article" />
 
-    <TextView
-        android:id="@+id/tvTitle"
+        <variable
+            name="responseModel"
+            type="com.example.myapplication.remote.response.ResponseDTO" />
+
+        <variable
+            name="source"
+            type="com.example.myapplication.remote.response.Source" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="" />
-    <TextView
-        android:id="@+id/tvDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="" />
-    <TextView
-        android:id="@+id/tvShortDesc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="" />
-</LinearLayout>
+        android:id="@+id/cvArticle"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivImageArticle"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                style="@style/TextView"
+                android:id="@+id/tvDateSymbol"
+                android:layout_below="@+id/ivImageArticle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date :- "/>
+
+            <TextView
+                style="@style/TextView"
+                android:textSize="20sp"
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivImageArticle"
+                android:layout_toEndOf="@+id/tvDateSymbol"
+                android:text="@{article.publishedAt}" />
+
+            <TextView
+                style="@style/TextView"
+                android:id="@+id/tvShortDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDateSymbol"
+                android:text="@{article.description}" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
