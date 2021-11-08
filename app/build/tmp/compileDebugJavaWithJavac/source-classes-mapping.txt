@@ -1,0 +1,24 @@
+com/example/myapplication/databinding/FragmentHomeBindingImpl.java
+ com.example.myapplication.databinding.FragmentHomeBindingImpl
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+com/example/myapplication/databinding/FragmentHomeBinding.java
+ com.example.myapplication.databinding.FragmentHomeBinding
+com/example/myapplication/DataBinderMapperImpl.java
+ com.example.myapplication.DataBinderMapperImpl
+ com.example.myapplication.DataBinderMapperImpl$InnerBrLookup
+ com.example.myapplication.DataBinderMapperImpl$InnerLayoutIdLookup
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+com/example/myapplication/DataBindingTriggerClass.java
+ com.example.myapplication.DataBindingTriggerClass
+com/example/myapplication/databinding/ItemLayoutBindingImpl.java
+ com.example.myapplication.databinding.ItemLayoutBindingImpl
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/example/myapplication/BuildConfig.java
+ com.example.myapplication.BuildConfig
+com/example/myapplication/databinding/ItemLayoutBinding.java
+ com.example.myapplication.databinding.ItemLayoutBinding
+com/example/myapplication/BR.java
+ com.example.myapplication.BR
