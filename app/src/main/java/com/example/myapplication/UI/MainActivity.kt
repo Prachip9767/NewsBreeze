@@ -1,12 +1,12 @@
-package com.example.myapplication
+package com.example.myapplication.UI
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.myapplication.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
+        setContentView(R.layout.activity_main)    }
 }
-//https://github.com/Prachip9767/NewsBreeze.git
+//https://github.com/Prachip9767/NewsBreeze.git api key
