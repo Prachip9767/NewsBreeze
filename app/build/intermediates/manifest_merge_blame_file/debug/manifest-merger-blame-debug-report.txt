@@ -1,0 +1,75 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.myapplication"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:5:5-24:19
+12        android:allowBackup="true"
+12-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.7.0] C:\Users\parde\.gradle\caches\transforms-3\c0564cc5afa1818a6ced2081ec2e5af8\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:7:9-43
+16        android:label="@string/app_name"
+16-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:10:9-35
+19        android:theme="@style/Theme.MyApplication" >
+19-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:11:9-51
+20        <activity
+20-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:12:9-14:39
+21            android:name="com.example.myapplication.UI.item_layout"
+21-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:13:13-43
+22            android:exported="true" />
+22-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:14:13-36
+23        <activity
+23-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:15:9-23:20
+24            android:name="com.example.myapplication.UI.MainActivity"
+24-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:16:13-44
+25            android:exported="true" >
+25-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:17:13-36
+26            <intent-filter>
+26-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:18:13-22:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:19:17-69
+27-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:19:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:21:17-77
+29-->C:\Users\parde\AndroidStudioProjects\NewsBreezeEvaluation\app\src\main\AndroidManifest.xml:21:27-74
+30            </intent-filter>
+31        </activity>
+32
+33        <provider
+33-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\parde\.gradle\caches\transforms-3\211789d1143d744bde41decec75c321c\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+34            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+34-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\parde\.gradle\caches\transforms-3\211789d1143d744bde41decec75c321c\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+35            android:authorities="com.example.myapplication.lifecycle-process"
+35-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\parde\.gradle\caches\transforms-3\211789d1143d744bde41decec75c321c\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+36            android:exported="false"
+36-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\parde\.gradle\caches\transforms-3\211789d1143d744bde41decec75c321c\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+37            android:multiprocess="true" />
+37-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\parde\.gradle\caches\transforms-3\211789d1143d744bde41decec75c321c\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+38
+39        <service
+39-->[androidx.room:room-runtime:2.3.0] C:\Users\parde\.gradle\caches\transforms-3\4aba59906dfb97a1cab1d53293600b4a\transformed\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
+40            android:name="androidx.room.MultiInstanceInvalidationService"
+40-->[androidx.room:room-runtime:2.3.0] C:\Users\parde\.gradle\caches\transforms-3\4aba59906dfb97a1cab1d53293600b4a\transformed\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
+41            android:directBootAware="true"
+41-->[androidx.room:room-runtime:2.3.0] C:\Users\parde\.gradle\caches\transforms-3\4aba59906dfb97a1cab1d53293600b4a\transformed\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
+42            android:exported="false" />
+42-->[androidx.room:room-runtime:2.3.0] C:\Users\parde\.gradle\caches\transforms-3\4aba59906dfb97a1cab1d53293600b4a\transformed\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
+43    </application>
+44
+45</manifest>
