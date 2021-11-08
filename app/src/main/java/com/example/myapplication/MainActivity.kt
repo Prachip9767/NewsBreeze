@@ -9,3 +9,4 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 }
+//https://github.com/Prachip9767/NewsBreeze.git
