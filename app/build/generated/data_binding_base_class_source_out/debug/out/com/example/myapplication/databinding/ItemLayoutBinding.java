@@ -21,16 +21,16 @@ import java.lang.Object;
 
 public abstract class ItemLayoutBinding extends ViewDataBinding {
   @NonNull
-  public final CardView cvArticle;
+  public final ImageView ivImage;
 
   @NonNull
-  public final ImageView ivImageArticle;
+  public final CardView newsArticle;
 
   @NonNull
   public final TextView tvDate;
 
   @NonNull
-  public final TextView tvDateSymbol;
+  public final TextView tvDates;
 
   @NonNull
   public final TextView tvShortDescription;
@@ -45,13 +45,13 @@ public abstract class ItemLayoutBinding extends ViewDataBinding {
   protected Source mSource;
 
   protected ItemLayoutBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      CardView cvArticle, ImageView ivImageArticle, TextView tvDate, TextView tvDateSymbol,
+      ImageView ivImage, CardView newsArticle, TextView tvDate, TextView tvDates,
       TextView tvShortDescription) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.cvArticle = cvArticle;
-    this.ivImageArticle = ivImageArticle;
+    this.ivImage = ivImage;
+    this.newsArticle = newsArticle;
     this.tvDate = tvDate;
-    this.tvDateSymbol = tvDateSymbol;
+    this.tvDates = tvDates;
     this.tvShortDescription = tvShortDescription;
   }
 

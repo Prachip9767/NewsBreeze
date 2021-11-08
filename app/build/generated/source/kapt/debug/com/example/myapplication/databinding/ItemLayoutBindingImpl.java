@@ -14,8 +14,8 @@ public class ItemLayoutBindingImpl extends ItemLayoutBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.ivImageArticle, 3);
-        sViewsWithIds.put(R.id.tvDateSymbol, 4);
+        sViewsWithIds.put(R.id.ivImage, 3);
+        sViewsWithIds.put(R.id.tvDates, 4);
     }
     // views
     // variables
@@ -28,13 +28,13 @@ public class ItemLayoutBindingImpl extends ItemLayoutBinding  {
     }
     private ItemLayoutBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (androidx.cardview.widget.CardView) bindings[0]
             , (android.widget.ImageView) bindings[3]
+            , (androidx.cardview.widget.CardView) bindings[0]
             , (android.widget.TextView) bindings[1]
             , (android.widget.TextView) bindings[4]
             , (android.widget.TextView) bindings[2]
             );
-        this.cvArticle.setTag(null);
+        this.newsArticle.setTag(null);
         this.tvDate.setTag(null);
         this.tvShortDescription.setTag(null);
         setRootTag(root);

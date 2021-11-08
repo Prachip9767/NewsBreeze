@@ -6,7 +6,8 @@ import android.view.View;
 import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
-import com.example.myapplication.databinding.FragmentHomeBindingImpl;
+import com.example.myapplication.databinding.FragmentArticleBindingImpl;
+import com.example.myapplication.databinding.FragmentNewsBindingImpl;
 import com.example.myapplication.databinding.ItemLayoutBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
@@ -19,14 +20,17 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final int LAYOUT_FRAGMENTHOME = 1;
+  private static final int LAYOUT_FRAGMENTARTICLE = 1;
 
-  private static final int LAYOUT_ITEMLAYOUT = 2;
+  private static final int LAYOUT_FRAGMENTNEWS = 2;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(2);
+  private static final int LAYOUT_ITEMLAYOUT = 3;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(3);
 
   static {
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.myapplication.R.layout.fragment_home, LAYOUT_FRAGMENTHOME);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.myapplication.R.layout.fragment_article, LAYOUT_FRAGMENTARTICLE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.myapplication.R.layout.fragment_news, LAYOUT_FRAGMENTNEWS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.myapplication.R.layout.item_layout, LAYOUT_ITEMLAYOUT);
   }
 
@@ -39,11 +43,17 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         throw new RuntimeException("view must have a tag");
       }
       switch(localizedLayoutId) {
-        case  LAYOUT_FRAGMENTHOME: {
-          if ("layout/fragment_home_0".equals(tag)) {
-            return new FragmentHomeBindingImpl(component, view);
+        case  LAYOUT_FRAGMENTARTICLE: {
+          if ("layout/fragment_article_0".equals(tag)) {
+            return new FragmentArticleBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for fragment_home is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for fragment_article is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTNEWS: {
+          if ("layout/fragment_news_0".equals(tag)) {
+            return new FragmentNewsBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_news is invalid. Received: " + tag);
         }
         case  LAYOUT_ITEMLAYOUT: {
           if ("layout/item_layout_0".equals(tag)) {
@@ -107,10 +117,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(2);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(3);
 
     static {
-      sKeys.put("layout/fragment_home_0", com.example.myapplication.R.layout.fragment_home);
+      sKeys.put("layout/fragment_article_0", com.example.myapplication.R.layout.fragment_article);
+      sKeys.put("layout/fragment_news_0", com.example.myapplication.R.layout.fragment_news);
       sKeys.put("layout/item_layout_0", com.example.myapplication.R.layout.item_layout);
     }
   }

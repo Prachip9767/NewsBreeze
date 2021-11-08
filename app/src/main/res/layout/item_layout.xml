@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <layout>
     <data>
-
         <variable
             name="article"
             type="com.example.myapplication.remote.response.Article" />
@@ -18,25 +18,25 @@
 
     <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:id="@+id/cvArticle"
+        android:id="@+id/newsArticle"
         android:layout_height="wrap_content">
 
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_margin="10dp"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/ivImageArticle"
+                android:id="@+id/ivImage"
                 android:scaleType="fitCenter"
                 android:layout_width="match_parent"
                 android:layout_height="200dp" />
 
             <TextView
                 style="@style/TextView"
-                android:id="@+id/tvDateSymbol"
-                android:layout_below="@+id/ivImageArticle"
+                android:id="@+id/tvDates"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Date :- "/>
@@ -47,8 +47,6 @@
                 android:id="@+id/tvDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ivImageArticle"
-                android:layout_toEndOf="@+id/tvDateSymbol"
                 android:text="@{article.publishedAt}" />
 
             <TextView
@@ -56,10 +54,9 @@
                 android:id="@+id/tvShortDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tvDateSymbol"
                 android:text="@{article.description}" />
 
-        </RelativeLayout>
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 </layout>

@@ -1905,6 +1905,7 @@ id action0
 id actionDown
 id actionDownUp
 id actionUp
+id action_NewsFragment_to_articleFragment
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1935,6 +1936,7 @@ id animateToStart
 id antiClockwise
 id anticipate
 id arc
+id articleFragment
 id asConfigured
 id async
 id auto
@@ -1991,7 +1993,6 @@ id currentState
 id custom
 id customPanel
 id cut
-id cvArticle
 id dataBinding
 id date_picker_actions
 id decelerate
@@ -2083,7 +2084,8 @@ id item2
 id item3
 id item4
 id item_touch_helper_previous_elevation
-id ivImageArticle
+id ivArticleImage
+id ivImage
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -2164,6 +2166,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id newsArticle
 id noScroll
 id noState
 id none
@@ -2319,9 +2322,14 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvAuthor
+id tvContent
 id tvDate
-id tvDateSymbol
+id tvDates
+id tvDescription
+id tvPublishedAt
 id tvShortDescription
+id tvTitle
 id unchecked
 id uniform
 id unlabeled
@@ -2428,7 +2436,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_home
+layout fragment_article
+layout fragment_news
 layout item_layout
 layout material_chip_input_combo
 layout material_clock_display

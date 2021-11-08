@@ -16,10 +16,6 @@
         "source": "C:\\Users\\parde\\AndroidStudioProjects\\NewsBreezeEvaluation\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\parde\\AndroidStudioProjects\\NewsBreezeEvaluation\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\parde\\AndroidStudioProjects\\NewsBreezeEvaluation\\app\\src\\main\\res\\layout\\fragment_home.xml"
-    },
-    {
         "merged": "C:\\Users\\parde\\AndroidStudioProjects\\NewsBreezeEvaluation\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\parde\\AndroidStudioProjects\\NewsBreezeEvaluation\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
@@ -70,5 +66,13 @@
     {
         "merged": "C:\\Users\\parde\\AndroidStudioProjects\\NewsBreezeEvaluation\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\parde\\AndroidStudioProjects\\NewsBreezeEvaluation\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\parde\\AndroidStudioProjects\\NewsBreezeEvaluation\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_news.xml.flat",
+        "source": "C:\\Users\\parde\\AndroidStudioProjects\\NewsBreezeEvaluation\\app\\src\\main\\res\\layout\\fragment_news.xml"
+    },
+    {
+        "merged": "C:\\Users\\parde\\AndroidStudioProjects\\NewsBreezeEvaluation\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_article.xml.flat",
+        "source": "C:\\Users\\parde\\AndroidStudioProjects\\NewsBreezeEvaluation\\app\\src\\main\\res\\layout\\fragment_article.xml"
     }
 ]
